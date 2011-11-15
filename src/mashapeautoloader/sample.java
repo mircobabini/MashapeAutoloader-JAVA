@@ -9,10 +9,10 @@ public class sample
 {
 	public static void main (String[] args) throws MalformedURLException, IOException, JSONException
 	{
-		MashapeAutoloader.auth ("PUBbxB$sw6HHHxqMaFeiWYlxHu4pHzuS", "PRIY6gfUmS4UHZlQke%dzR79mTrkGpix");
+		MashapeAutoloader.auth ("your-public-key", "your-private-key");
 		MashapeAutoloader.store ("src/store/");
 
-		JSONObject exec = MashapeAutoloader.exec ("Unshortener", "unshort", "http://ddg.gg");
+		JSONObject exec = MashapeAutoloader.exec ("Unshortener", "unshort", "http://wp.me/p1e4Gf-6r");
 		if (exec != null)
 		{
 			String string = exec.getString ("longUrl");
