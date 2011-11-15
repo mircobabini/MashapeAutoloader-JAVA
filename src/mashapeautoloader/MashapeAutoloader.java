@@ -87,6 +87,16 @@ public class MashapeAutoloader
 		}
 	}
 
+	/**
+	 * @param librayName
+	 * @param methodName
+	 * @param arguments
+	 * @return JSONObject
+	 * @throws MalformedURLException
+	 * @throws IOException
+	 * 
+	 * Returns the json result of invoked method on called api
+	 */
 	public static JSONObject exec (String librayName, String methodName, String... arguments) throws MalformedURLException, IOException
 	{
 		// check for local api store
